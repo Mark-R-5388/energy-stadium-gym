@@ -30,7 +30,7 @@ li {
 /* Header Start */
 .header-container {
   background: var(--primary-color);
-  padding: 20px 25px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,11 +38,88 @@ li {
 .header-logo {
   width: 110px;
   height: 110px;
+  margin: 20px 0 20px 50px;
 }
 .header-nav-links-container {
+  width: 662px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 50px;
+}
+.header-nav-link {
+  font-size: 36px;
 }
 /* Header End */
 
+/* Homepage Start */
+.homepage-container {
+  position: relative;
+  width: 100%;
+  height: 755px;
+  background-image: url('./gym-main-image.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center -400px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.homepage-container::after {
+  position: absolute;
+  content: '';
+  background: rgba(66, 66, 66, 0.493);
+  height: 100%;
+  width: 100%;
+}
+.homepage-title {
+  position: relative;
+  top: 100px;
+  margin-left: 50px;
+  margin-right: 150px;
+  color: var(--primary-color);
+  font-size: 58px;
+  height: 75px;
+  z-index: 2;
+  text-align: center;
+}
+.homepage-text {
+  position: relative;
+  color: var(--primary-color);
+  top: 100px;
+  width: 500px;
+  height: 95px;
+  margin-right: 50px;
+  margin-left: 150px;
+  font-size: 40px;
+  text-align: center;
+  z-index: 2;
+}
+/* Homepage End */
+
 /* Footer Start */
+.footer-container {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background: var(--primary-color);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-text {
+  margin-left: 50px;
+  font-size: 36px;
+}
+.social-media-icons {
+  width: 210px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-media-icon {
+  font-size: 36px;
+}
 /* Footer End */

@@ -54,48 +54,102 @@ li {
 
 /* Homepage Start */
 .homepage-container {
+  background: rgba(0, 0, 0, 0.781);
   position: relative;
   width: 100%;
   height: 755px;
-  background-image: url('./gym-main-image.jpeg');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center -400px;
   display: flex;
-  justify-content: space-between;
-  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
-.homepage-container::after {
-  position: absolute;
-  content: '';
-  background: rgba(66, 66, 66, 0.493);
+.homepage-column-text {
+  width: 50%;
   height: 100%;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .homepage-title {
-  position: relative;
-  top: 100px;
-  margin-left: 50px;
-  margin-right: 150px;
   color: var(--primary-color);
   font-size: 58px;
   height: 75px;
-  z-index: 2;
+  margin-left: 25px;
+  margin-right: 25px;
   text-align: center;
 }
 .homepage-text {
-  position: relative;
   color: var(--primary-color);
-  top: 100px;
-  width: 500px;
-  height: 95px;
-  margin-right: 50px;
-  margin-left: 150px;
   font-size: 40px;
   text-align: center;
-  z-index: 2;
+  margin-left: 25px;
+  margin-right: 25px;
 }
+.homepage-column-image {
+  width: 50%;
+  height: 755px;
+  background: black;
+  opacity: 0.5;
+}
+.homepage-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Homepage End */
+
+/* About Page Start */
+.about-container {
+  width: 100%;
+  height: 755px;
+  display: flex;
+}
+.about-image-container {
+  background: rgba(0, 0, 0, 0.781);
+  position: relative;
+  width: 50%;
+  height: 755px;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+.about-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+.about-text-container {
+  background: rgba(0, 0, 0, 0.781);
+  color: var(--primary-color);
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 2;
+  flex-grow: 2;
+}
+.about-text-container h1 {
+  font-size: 58px;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: center;
+}
+.about-text-columns {
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.about-text-columns p {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+/* About Page End */
 
 /* Footer Start */
 .footer-container {

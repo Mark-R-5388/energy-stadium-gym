@@ -7,7 +7,7 @@ import TrainerCard from '../components/TrainerCard.js'
 
 function Trainerspage() {
   return (
-    <div>
+    <div className='trainers-page-container'>
       <div className='trainers-title'>
         <h1>The Trainers</h1>
       </div>

@@ -157,12 +157,22 @@ li {
 /* About Page End */
 
 /* Trainers Page Start */
+.trainers-page-container {
+  background: rgba(0, 0, 0, 0.781);
+  height: 100%;
+}
 .trainers-title {
+  padding-top: 2rem;
   text-align: center;
   font-size: 3rem;
+  color: var(--primary-color);
+}
+.trainers-title > h1 {
+  margin: 0 0 2rem 0;
 }
 .trainers-cards-container {
   width: 90vw;
+  padding-bottom: 2rem;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -171,8 +181,8 @@ li {
   align-content: center;
 }
 .trainer-card-container {
-  margin: 0.75rem;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+  background: white;
+  margin: 0.2rem 0.5rem;
   width: 250px;
   height: 400px;
 }
@@ -200,7 +210,14 @@ li {
   font-size: 1rem;
   text-align: center;
 }
-/* Trainers Page End */ /* Footer Start */
+@media (max-width: 425px) {
+  .trainers-title {
+    font-size: 2rem;
+  }
+}
+/* Trainers Page End */
+
+/* Footer Start */
 .footer-container {
   position: relative;
   bottom: 0;
